@@ -1,4 +1,6 @@
+import { IActivity } from '../interfaces/index'
+
 export type AppStackParamList = {
   ActivityList: undefined
-  ActivityDetails: undefined
+  ActivityDetails: { activity: IActivity }
 }
