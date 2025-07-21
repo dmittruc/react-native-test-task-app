@@ -14,7 +14,9 @@ const ActivityListScreen = () => {
   }
   return (
     <SafeAreaView style={tw`flex-1 bg-white`}>
-      <Text style={tw`text-base font-bold mb-8 text-center`}>Activities</Text>
+      <Text style={tw`text-base font-bold mb-8 mt-6 text-center`}>
+        Activities
+      </Text>
       <FlatList
         data={data}
         renderItem={({ item }) => <ActivityCardItem activity={item} />}
