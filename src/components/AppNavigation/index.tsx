@@ -1,4 +1,3 @@
-import { SafeAreaView } from 'react-native-safe-area-context'
 import {
   TransitionPresets,
   createStackNavigator,
@@ -6,12 +5,14 @@ import {
 import { AppStackParamList } from '../../interfaces/routeParams'
 import ActivityListScreen from '../../screens/ActivityListScreen'
 import ActivityDetailsScreen from '../../screens/ActivityDetailsScreen'
+import tw from 'twrnc'
+import { View } from 'react-native'
 
 const AppStack = createStackNavigator<AppStackParamList>()
 
 const AppNavigation = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <View style={tw`flex-1 bg-white`}>
       <AppStack.Navigator
         screenOptions={{
           headerShown: false,
@@ -24,7 +25,7 @@ const AppNavigation = () => {
           component={ActivityDetailsScreen}
         />
       </AppStack.Navigator>
-    </SafeAreaView>
+    </View>
   )
 }
 

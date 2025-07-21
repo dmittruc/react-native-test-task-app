@@ -31,7 +31,7 @@ const ActivityDetailsScreen = () => {
     <View style={tw`flex-1 bg-white`}>
       <Pressable
         onPress={() => navigation.goBack()}
-        style={tw`absolute top-4 left-4 z-10 bg-white rounded-full p-2`}
+        style={tw`absolute top-12 left-4 z-1 bg-white rounded-full p-2`}
       >
         <LeftArrowIcon style={tw`m-3`} />
       </Pressable>

@@ -13,7 +13,7 @@ const ActivityListScreen = () => {
     return <ActivityIndicator />
   }
   return (
-    <SafeAreaView style={tw`flex-1 p-4 bg-white`}>
+    <SafeAreaView style={tw`flex-1 bg-white`}>
       <Text style={tw`text-base font-bold mb-8 text-center`}>Activities</Text>
       <FlatList
         data={data}

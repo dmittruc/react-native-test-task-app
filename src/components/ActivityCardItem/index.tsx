@@ -19,7 +19,10 @@ const ActivityCardItem = ({ activity }: IProps) => {
   }
 
   return (
-    <Pressable onPress={handleNavigateDetails} style={tw`mb-4`}>
+    <Pressable
+      onPress={handleNavigateDetails}
+      style={tw`mb-4 w-90% self-center`}
+    >
       {photoUrl && (
         <View>
           <Image
@@ -29,7 +32,7 @@ const ActivityCardItem = ({ activity }: IProps) => {
         </View>
       )}
       <View
-        style={tw`bg-gray-100 p-4 rounded-20px h-85px flex-row justify-between items-center`}
+        style={tw`bg-gray-50 p-4 rounded-20px h-85px flex-row justify-between items-center`}
       >
         <View>
           <View>
