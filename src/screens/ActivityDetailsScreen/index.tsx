@@ -4,12 +4,12 @@ import {
   useNavigation,
   useRoute,
 } from '@react-navigation/native'
-import { AppStackParamList } from '../../interfaces/routeParams'
+import LeftArrowIcon from '@assets/icons/left-arrow.svg'
 import { View, Text, Image, Pressable, Alert } from 'react-native'
 import tw from 'twrnc'
 import { useMutation } from '@tanstack/react-query'
-import { addFavoriteApi } from '../../api/favoritesApi'
-import LeftArrowIcon from '../../assets/icons/Vector.svg'
+import { addFavoriteApi } from 'api/favoritesApi'
+import { AppStackParamList } from 'interfaces/routeParams'
 
 const ActivityDetailsScreen = () => {
   const route = useRoute<RouteProp<AppStackParamList, 'ActivityDetails'>>()

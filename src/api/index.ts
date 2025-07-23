@@ -1,6 +1,7 @@
+import { BASE_URL } from '@env'
 import axios from 'axios'
 
 export const axiosInstance = axios.create({
-  baseURL: 'https://test-task-server-production-3257.up.railway.app',
+  baseURL: BASE_URL,
   timeout: 5000,
 })

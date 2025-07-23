@@ -1,16 +1,16 @@
 import { NavigationProp, useNavigation } from '@react-navigation/native'
-import { IActivity } from '../../interfaces'
 import { Text, View, Image, Pressable } from 'react-native'
 import tw from 'twrnc'
 import { AppStackParamList } from 'interfaces/routeParams'
-import MapPinIcon from '../../assets/icons/MapPin.svg'
-import StarIcon from '../../assets/icons/Star.svg'
+import MapPinIcon from '@assets/icons/map.svg'
+import StarIcon from '@assets/icons/star.svg'
+import { IActivity } from 'interfaces'
 
-interface IProps {
+interface ActivityCardItemsProps {
   activity: IActivity
 }
 
-const ActivityCardItem = ({ activity }: IProps) => {
+const ActivityCardItem = ({ activity }: ActivityCardItemsProps) => {
   const { photoUrl, name, location, rating, price } = activity
   const navigation = useNavigation<NavigationProp<AppStackParamList>>()
 
