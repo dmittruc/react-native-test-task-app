@@ -4,8 +4,8 @@ import {
 } from '@react-navigation/stack'
 import tw from 'twrnc'
 import { View } from 'react-native'
-import ActivityDetailsScreen from '@screens/ActivityDetailsScreen'
-import ActivityListScreen from '@screens/ActivityListScreen'
+import ActivityDetailsScreen from '@screens/ActivityDetailsScreen/ActivityDetailsScreen'
+import ActivityListScreen from '@screens/ActivityListScreen/ActivityListScreen'
 import { AppStackParamList } from 'interfaces/routeParams'
 
 const AppStack = createStackNavigator<AppStackParamList>()

@@ -1,6 +1,6 @@
-import { axiosInstance } from './index'
+import { axiosInstance } from 'api'
 
-export const addFavoriteApi = async (id: number) => {
+export const addFavouritesApi = async (id: number) => {
   const response = await axiosInstance.post('/favorites', { id })
   return response.data.message
 }

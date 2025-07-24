@@ -1,4 +1,4 @@
-import { axiosInstance } from './index'
+import { axiosInstance } from 'api'
 
 export const getActivitiesApi = async () => {
   const response = await axiosInstance.get('/activities')

@@ -1,22 +1,20 @@
-import { ActivityIndicator, FlatList, SafeAreaView, Text } from 'react-native'
+import { ActivityIndicator, FlatList, Text } from 'react-native'
 import tw from 'twrnc'
-import { useQuery } from '@tanstack/react-query'
-import ActivityCardItem from '@components/ActivityCardItem'
-import { getActivitiesApi } from 'api/activitiesApi'
+import ActivityCardItem from '@components/ActivityListItem'
+import useActivities from 'api/activities/useActivities'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const ActivityListScreen = () => {
-  const { data, isLoading } = useQuery({
-    queryKey: ['activities'],
-    queryFn: getActivitiesApi,
-  })
+  const { data, isLoading } = useActivities()
   if (isLoading) {
     return <ActivityIndicator />
   }
   return (
     <SafeAreaView style={tw`flex-1 bg-white`}>
-      <Text style={tw`text-base font-bold mb-8 mt-6 text-center`}>
+      <Text style={tw`text-base font-bold mb-8 text-center text-black`}>
         Activities
       </Text>
+
       <FlatList
         data={data}
         renderItem={({ item }) => <ActivityCardItem activity={item} />}
