@@ -15,6 +15,7 @@ const ActivityListScreen = () => {
   }
 
   const { data, isLoading } = useActivities()
+
   if (isLoading) {
     return <ActivityIndicator />
   }

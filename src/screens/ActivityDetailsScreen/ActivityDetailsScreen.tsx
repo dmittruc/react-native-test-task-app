@@ -37,6 +37,7 @@ const ActivityDetailsScreen = () => {
           style={tw`w-full h-45% rounded-b-20px`}
         />
       )}
+
       <ActivityDetailsDescription
         name={name}
         price={price}

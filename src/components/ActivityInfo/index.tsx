@@ -14,6 +14,7 @@ const ActivityInfo = ({ name, location }: ActivityInfoProps) => {
       <View>
         <Text style={tw`text-lg text-black`}>{name}</Text>
       </View>
+
       <View style={tw`flex-row`}>
         <MapPinIcon style={tw`mr-1`} />
         <Text style={tw`text-md text-black`}>{location}</Text>
