@@ -1,8 +1,8 @@
 import { useMutation } from '@tanstack/react-query'
-import { addFavouritesApi } from './favouritesApi'
+import { addFavouritesApi } from 'api/activities/actions'
 import { Alert } from 'react-native'
 
-const useFavourites = () => {
+const useActivitiesMutation = () => {
   const { mutate } = useMutation({
     mutationFn: (id: number) => addFavouritesApi(id),
     onSuccess: message => {
@@ -16,4 +16,4 @@ const useFavourites = () => {
   return { mutate }
 }
 
-export default useFavourites
+export default useActivitiesMutation
