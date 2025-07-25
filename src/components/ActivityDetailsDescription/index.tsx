@@ -17,7 +17,7 @@ const ActivityDetailsDescription = ({
       <Text style={tw`text-2xl text-black`}>{name}</Text>
 
       <View style={tw`flex-row justify-between items-end`}>
-        <Text style={tw`text-base text-black`}>${price}.00</Text>
+        <Text style={tw`text-base text-black`}>${price.toFixed(2)}</Text>
         <Text style={tw`text-sm`}>Included taxes and fees</Text>
       </View>
 

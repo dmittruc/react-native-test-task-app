@@ -16,7 +16,7 @@ const ActivityRating = ({ rating, price }: ActivityRatingProps) => {
       </View>
 
       <View style={tw`flex-row items-baseline`}>
-        <Text style={tw`mr-1 text-lg text-black`}>${price}.00</Text>
+        <Text style={tw`mr-1 text-lg text-black`}>${price.toFixed(2)}</Text>
         <Text style={tw`text-sm`}>/ night</Text>
       </View>
     </View>
